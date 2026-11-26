@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07100d" />
+  <title>Entrar | Nexo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body class="auth-page">
+  <header class="header auth-header">
+    <div class="nav-container">
+      <a class="brand" href="index.html" aria-label="Nexo - página inicial">
+        <svg class="brand-icon" viewBox="0 0 34 34" aria-hidden="true">
+          <rect x="3" y="3" width="11" height="11" rx="3" />
+          <rect x="20" y="20" width="11" height="11" rx="3" />
+          <path d="M14 9h5a3 3 0 0 1 3 3v8" />
+          <rect x="3" y="20" width="11" height="11" rx="3" />
+        </svg>
+        <span class="brand-name">nexo.</span>
+        <span class="brand-divider"></span>
+        <span class="brand-subtitle">AUTOMAÇÃO<br />& IA</span>
+      </a>
+      <a class="back-link" href="index.html">← Voltar ao site</a>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-card" aria-labelledby="authTitle">
+      <div class="auth-mark" aria-hidden="true">n.</div>
+      <p class="auth-eyebrow"><span class="status-dot"></span> ÁREA DO CLIENTE</p>
+      <h1 id="authTitle">Boas-vindas de volta.</h1>
+      <p class="auth-description" id="authDescription">Entre na sua conta para continuar.</p>
+
+      <div class="auth-tabs" role="tablist" aria-label="Tipo de acesso">
+        <button class="auth-tab active" id="loginTab" type="button" role="tab" aria-selected="true">Entrar</button>
+        <button class="auth-tab" id="signupTab" type="button" role="tab" aria-selected="false">Criar conta</button>
+      </div>
+
+      <form id="authForm" novalidate>
+        <label for="nameField" id="nameLabel" hidden>Seu nome</label>
+        <input id="nameField" name="name" type="text" autocomplete="name" placeholder="Seu nome" hidden />
+
+        <label for="emailField">E-mail</label>
+        <input id="emailField" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required />
+
+        <label for="passwordField">Senha</label>
+        <div class="password-wrap">
+          <input id="passwordField" name="password" type="password" autocomplete="current-password" placeholder="Sua senha" minlength="6" required />
+          <button type="button" class="password-toggle" id="passwordToggle" aria-label="Mostrar senha">Mostrar</button>
+        </div>
+
+        <button class="forgot-link" id="forgotButton" type="button">Esqueceu sua senha?</button>
+        <p class="auth-message" id="authMessage" role="status" aria-live="polite"></p>
+        <button class="button button-primary auth-submit" id="submitButton" type="submit">
+          Entrar <span>↗</span>
+        </button>
+      </form>
+
+      <p class="auth-legal">Ao continuar, você concorda com os termos de uso e a política de privacidade da Nexo.</p>
+    </section>
+    <p class="auth-footer">NEXO. · AUTOMAÇÃO & INTELIGÊNCIA ARTIFICIAL</p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
