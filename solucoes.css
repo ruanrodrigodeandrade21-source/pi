@@ -1,411 +1,61 @@
-/* SEÇÃO DE SOLUÇÕES */
+/* SOLUÇÕES — FUNDO CLARO */
 .solutions-section {
-  position: relative;
-  overflow: hidden;
-  padding: 112px 24px 120px;
   background:
-    radial-gradient(ellipse at 82% 7%, rgba(52, 126, 87, 0.1), transparent 34%),
-    var(--bg);
+    radial-gradient(ellipse at 82% 10%, rgba(98, 227, 167, 0.11), transparent 28%),
+    var(--light);
+  color: #173025;
 }
 
-.solutions-container,
-.practice-container,
-.final-cta-container {
-  width: min(1148px, 100%);
-  margin: 0 auto;
+.solutions-section .solutions-title {
+  color: #173025;
 }
 
-.section-label {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin: 0 0 22px;
-  color: var(--green);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 1.15px;
+.solutions-section .solutions-description {
+  color: #66766e;
 }
 
-.section-label .status-dot {
-  box-shadow: 0 0 12px rgba(98, 227, 167, 0.65);
+.solutions-section .section-label {
+  color: #2d8b64;
 }
 
-.solutions-title,
-.practice-title {
-  max-width: 760px;
-  margin: 0;
-  color: var(--text);
-  font-size: clamp(34px, 4.2vw, 52px);
-  font-weight: 500;
-  line-height: 1.12;
-  letter-spacing: -1.8px;
+.solutions-section .solutions-grid {
+  border-color: #cbd7d0;
 }
 
-.solutions-description {
-  max-width: 570px;
-  margin: 19px 0 47px;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.85;
+.solutions-section .solution-card {
+  border-color: #cbd7d0;
+  background: rgba(255, 255, 255, 0.72);
 }
 
-.solutions-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+.solutions-section .solution-card:hover {
+  border-color: rgba(45, 139, 100, 0.55);
+  background: #ffffff;
 }
 
-.solution-card {
-  min-height: 250px;
-  padding: 25px 22px 22px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  background: rgba(10, 21, 17, 0.52);
-  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+.solutions-section .card-icon {
+  border-color: rgba(45, 139, 100, 0.24);
+  background: rgba(98, 227, 167, 0.1);
+  color: #287c5a;
 }
 
-.solution-card:hover {
-  position: relative;
-  z-index: 1;
-  transform: translateY(-4px);
-  border-color: rgba(98, 227, 167, 0.45);
-  background: #0c1b14;
+.solutions-section .card-category {
+  color: #7b8a82;
 }
 
-.card-top {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 25px;
+.solutions-section .solution-card h3 {
+  color: #173025;
 }
 
-.card-icon {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(98, 227, 167, 0.28);
-  border-radius: 4px;
-  color: var(--green);
-  background: rgba(98, 227, 167, 0.06);
-  font-size: 20px;
-  line-height: 1;
+.solutions-section .solution-card > p {
+  color: #66766e;
 }
 
-.card-category {
-  color: #82958a;
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.9px;
-  text-align: right;
+.solutions-section .solution-card > a {
+  color: #36584a;
 }
 
-.solution-card h3 {
-  margin: 0 0 10px;
-  color: var(--text);
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: -0.25px;
-}
-
-.solution-card > p {
-  margin: 0 0 22px;
-  color: #aab8b1;
-  font-size: 11px;
-  line-height: 1.75;
-}
-
-.solution-card > a {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  margin-top: auto;
-  color: #c9d5ce;
-  font-size: 9px;
-  transition: color 0.2s ease;
-}
-
-.solution-card > a span {
-  color: var(--green);
-  font-size: 15px;
-  transition: transform 0.2s ease;
-}
-
-.solution-card > a:hover,
-.solution-card > a:focus-visible {
-  color: var(--green);
-}
-
-.solution-card > a:hover span {
-  transform: translateX(3px);
-}
-
-/* SEÇÃO NA PRÁTICA */
-.practice-section {
-  padding: 106px 24px 112px;
-  border-top: 1px solid var(--line);
-  background: var(--bg-soft);
-}
-
-.practice-title {
-  max-width: 680px;
-  margin-bottom: 36px;
-}
-
-.practice-tabs {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 18px;
-  overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(98, 227, 167, 0.3) transparent;
-}
-
-.practice-tab {
-  min-height: 42px;
-  padding: 0 17px;
-  flex: 0 0 auto;
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  background: transparent;
-  color: #aab8b1;
-  font: inherit;
-  font-size: 11px;
-  cursor: pointer;
-  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-}
-
-.practice-tab:hover,
-.practice-tab.active {
-  border-color: var(--green);
-  background: rgba(98, 227, 167, 0.08);
-  color: var(--green);
-}
-
-.practice-tab:focus-visible,
-.final-cta-button:focus-visible,
-.solution-card a:focus-visible {
-  outline: 2px solid var(--green-bright);
-  outline-offset: 4px;
-}
-
-.practice-content {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 64px;
-  padding: 37px 38px;
-  border: 1px solid var(--line);
-  background: linear-gradient(115deg, rgba(16, 34, 25, 0.82), rgba(8, 18, 13, 0.92));
-}
-
-.practice-left {
-  align-self: center;
-}
-
-.practice-left h3 {
-  max-width: 400px;
-  margin: 0 0 13px;
-  color: var(--text);
-  font-size: clamp(24px, 3vw, 34px);
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: -0.9px;
-}
-
-.practice-left p,
-.practice-description {
-  margin: 0;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.8;
-}
-
-.practice-right {
-  padding-left: 32px;
-  border-left: 1px solid var(--line);
-}
-
-.practice-small-label {
-  color: var(--green);
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.practice-flow {
-  margin: 15px 0 17px;
-  color: var(--text);
-  font-size: clamp(15px, 1.8vw, 20px);
-  line-height: 1.55;
-  letter-spacing: -0.3px;
-}
-
-.practice-note {
-  margin: 18px 0 0;
-  color: #7f9187;
-  font-size: 9px;
-  line-height: 1.6;
-}
-
-/* CHAMADA FINAL */
-.final-cta {
-  padding: 75px 24px;
-  border-top: 1px solid rgba(98, 227, 167, 0.2);
-  border-bottom: 1px solid var(--line);
-  background:
-    radial-gradient(ellipse at 12% 50%, rgba(55, 128, 88, 0.16), transparent 45%),
-    #0a1511;
-}
-
-.final-cta-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-}
-
-.final-cta-label {
-  margin: 0 0 17px;
-  color: var(--green);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 1.1px;
-}
-
-.final-cta h2 {
-  margin: 0;
-  color: var(--text);
-  font-size: clamp(32px, 4vw, 46px);
-  font-weight: 500;
-  line-height: 1.13;
-  letter-spacing: -1.5px;
-}
-
-.final-cta-right {
-  width: min(390px, 40%);
-}
-
-.final-cta-right > p {
-  margin: 0 0 22px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.7;
-}
-
-.final-cta-button {
-  min-height: 48px;
-  padding: 0 17px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  border: 1px solid var(--green);
-  border-radius: 3px;
-  background: var(--green);
-  color: #06110c;
-  font-size: 11px;
-  font-weight: 600;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.final-cta-button:hover {
-  transform: translateY(-2px);
-  background: #82f0bc;
-}
-
-.final-cta-button span {
-  font-size: 16px;
-}
-
-@media (max-width: 950px) {
-  .solutions-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .practice-content {
-    gap: 34px;
-    padding: 30px;
-  }
-}
-
-@media (max-width: 650px) {
-  .solutions-section,
-  .practice-section {
-    padding: 76px 16px 82px;
-  }
-
-  .solutions-title,
-  .practice-title {
-    font-size: clamp(32px, 9vw, 43px);
-    letter-spacing: -1.2px;
-  }
-
-  .solutions-description {
-    margin: 16px 0 32px;
-    font-size: 12px;
-  }
-
-  .solutions-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .solution-card {
-    min-height: 218px;
-    padding: 22px;
-  }
-
-  .card-top {
-    margin-bottom: 19px;
-  }
-
-  .practice-title {
-    margin-bottom: 28px;
-  }
-
-  .practice-tabs {
-    margin-right: -16px;
-    padding-right: 16px;
-  }
-
-  .practice-content {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    padding: 25px 21px;
-  }
-
-  .practice-right {
-    padding: 23px 0 0;
-    border-top: 1px solid var(--line);
-    border-left: 0;
-  }
-
-  .final-cta {
-    padding: 64px 16px;
-  }
-
-  .final-cta-container {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .final-cta-right {
-    width: 100%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .solution-card,
-  .solution-card > a,
-  .solution-card > a span,
-  .practice-tab,
-  .final-cta-button {
-    transition: none;
-  }
+.solutions-section .solution-card > a span,
+.solutions-section .solution-card > a:hover,
+.solutions-section .solution-card > a:focus-visible {
+  color: #287c5a;
 }
