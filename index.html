@@ -33,7 +33,7 @@
         </a>
 
         <!-- BOTÃO MENU MOBILE -->
-        <button class="menu-toggle" id="menuToggle">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
@@ -46,11 +46,14 @@
           <a href="#planos">Planos</a>
         </nav>
 
-        <!-- BOTÃO DE CONTATO -->
-        <a class="button button-primary header-cta" href="#contato">
-          Vamos conversar
-          <span>↗</span>
-        </a>
+        <!-- ACESSO E CONTATO -->
+        <div class="header-actions">
+          <a class="button button-outline header-login" href="login.html" id="authAction">Entrar</a>
+          <a class="button button-primary header-cta" href="#contato">
+            Vamos conversar
+            <span>↗</span>
+          </a>
+        </div>
       </div>
     </header>
 
@@ -63,13 +66,11 @@
           <div class="hero-copy">
             <p class="eyebrow">
               <span class="status-dot"></span>
-
               INTELIGÊNCIA QUE MOVE NEGÓCIOS
             </p>
 
             <h1>
               Automação empresarial.<br />
-
               <span>
                 Mais tempo para<br />
                 o que importa.
@@ -77,10 +78,7 @@
             </h1>
 
             <p class="hero-description">
-              Conectamos processos, sistemas e inteligência artificial<br
-                class="desktop-break"
-              />
-
+              Conectamos processos, sistemas e inteligência artificial<br class="desktop-break" />
               para sua empresa trabalhar melhor. Sem complicar.
             </p>
 
@@ -99,20 +97,9 @@
 
             <!-- BENEFÍCIOS -->
             <div class="benefits">
-              <span>
-                <b>✓</b>
-                Soluções sob medida
-              </span>
-
-              <span>
-                <b>✓</b>
-                Foco em resultado
-              </span>
-
-              <span>
-                <b>✓</b>
-                Acompanhamento contínuo
-              </span>
+              <span><b>✓</b> Soluções sob medida</span>
+              <span><b>✓</b> Foco em resultado</span>
+              <span><b>✓</b> Acompanhamento contínuo</span>
             </div>
           </div>
 
@@ -120,29 +107,18 @@
           <div class="hero-visual">
             <div class="orb orb-one"></div>
             <div class="orb orb-two"></div>
-
             <div class="connection connection-one"></div>
             <div class="connection connection-two"></div>
             <div class="connection connection-three"></div>
-
             <div class="visual-caption">
-              SISTEMAS CONECTADOS
-
-              <span>●</span>
-
-              FLUXOS INTELIGENTES
+              SISTEMAS CONECTADOS <span>●</span> FLUXOS INTELIGENTES
             </div>
           </div>
 
           <!-- RODAPÉ DA SEÇÃO PRINCIPAL -->
           <div class="hero-bottom" id="como-funciona">
             <span> MENOS REPETIÇÃO. MAIS POSSIBILIDADES. </span>
-
-            <a href="#planos">
-              Conheça a Nexo
-
-              <span>↓</span>
-            </a>
+            <a href="#planos">Conheça a Nexo <span>↓</span></a>
           </div>
         </div>
       </section>
@@ -152,39 +128,13 @@
         <div class="integration-inner">
           <div class="integration-intro">
             <span>Suas ferramentas.</span>
-
             <strong>Agora, conectadas.</strong>
           </div>
-
-          <div class="integration-logo n8n">
-            <span class="mini-nodes">⌘</span>
-
-            n8n
-          </div>
-
-          <div class="integration-logo make">
-            <span class="make-mark">▰</span>
-
-            make
-          </div>
-
-          <div class="integration-logo openai">
-            <span class="spark">✧</span>
-
-            OpenAI
-          </div>
-
-          <div class="integration-logo whatsapp">
-            <span class="chat-icon">▱</span>
-
-            WhatsApp
-          </div>
-
-          <div class="integration-logo crm">
-            <span class="network-icon">♧</span>
-
-            CRM & ERP
-          </div>
+          <div class="integration-logo n8n"><span class="mini-nodes">⌘</span> n8n</div>
+          <div class="integration-logo make"><span class="make-mark">▰</span> make</div>
+          <div class="integration-logo openai"><span class="spark">✧</span> OpenAI</div>
+          <div class="integration-logo whatsapp"><span class="chat-icon">▱</span> WhatsApp</div>
+          <div class="integration-logo crm"><span class="network-icon">♧</span> CRM & ERP</div>
         </div>
       </section>
 
@@ -193,42 +143,27 @@
         <div>
           <p class="eyebrow">
             <span class="status-dot"></span>
-
             VAMOS CONSTRUIR ALGO MELHOR
           </p>
-
-          <h2>
-            Seu próximo passo<br />
-
-            <span>começa com uma conversa.</span>
-          </h2>
-
-          <p>
-            Conte para nós sobre sua empresa e descubra onde a automação pode
-            ajudar.
-          </p>
+          <h2>Seu próximo passo<br /><span>começa com uma conversa.</span></h2>
+          <p>Conte para nós sobre sua empresa e descubra onde a automação pode ajudar.</p>
         </div>
-
         <a class="button button-primary" href="mailto:contato@nexo.com.br">
-          Vamos conversar
-
-          <span>↗</span>
+          Vamos conversar <span>↗</span>
         </a>
       </section>
     </main>
 
     <!-- RODAPÉ -->
     <footer class="footer">
-      <span>
-        nexo.
-
-        <small>Automação & IA</small>
-      </span>
-
+      <span>nexo. <small>Automação & IA</small></span>
       <span> Menos repetição. Mais possibilidades. </span>
     </footer>
 
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="auth.js"></script>
   </body>
 </html>
