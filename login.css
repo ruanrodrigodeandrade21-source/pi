@@ -1,0 +1,33 @@
+/* Tela de autenticação — mantém a identidade visual da Nexo */
+.auth-page { min-height: 100vh; background: radial-gradient(ellipse at 50% 35%, rgba(45,112,79,.17), transparent 48%), var(--bg); }
+.auth-header { background: rgba(7,16,13,.82); }
+.back-link { color: var(--muted); font-size: 12px; transition: color .2s; }
+.back-link:hover { color: var(--green); }
+.auth-main { min-height: calc(100vh - 80px); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 52px 20px 30px; }
+.auth-card { width: min(100%, 440px); padding: 38px; border: 1px solid rgba(207,226,215,.15); border-radius: 12px; background: rgba(10,21,17,.88); box-shadow: 0 24px 90px rgba(0,0,0,.28); }
+.auth-mark { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid rgba(98,227,167,.35); border-radius: 12px; color: var(--green); font-size: 23px; font-weight: 700; margin-bottom: 28px; }
+.auth-eyebrow { display: flex; align-items: center; gap: 8px; color: var(--green); font-size: 9px; font-weight: 700; letter-spacing: 1.2px; margin: 0 0 12px; }
+.auth-card h1 { font-size: clamp(28px, 6vw, 36px); letter-spacing: -1.2px; }
+.auth-description { color: var(--muted); font-size: 13px; line-height: 1.7; margin: 12px 0 25px; }
+.auth-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; padding: 4px; border-radius: 7px; background: #07100d; margin-bottom: 24px; }
+.auth-tab { border: 0; border-radius: 5px; padding: 11px; color: #9eafa5; background: transparent; font: inherit; font-size: 12px; cursor: pointer; }
+.auth-tab.active { background: #17271f; color: var(--green); }
+#authForm { display: flex; flex-direction: column; gap: 9px; }
+#authForm label { margin-top: 7px; color: #d8e2dc; font-size: 11px; font-weight: 600; }
+#authForm input { width: 100%; min-height: 47px; padding: 0 14px; border: 1px solid rgba(207,226,215,.18); border-radius: 5px; outline: none; color: var(--text); background: #07100d; font: inherit; font-size: 13px; transition: border-color .2s, box-shadow .2s; }
+#authForm input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(98,227,167,.1); }
+#authForm input::placeholder { color: #6f8177; }
+.password-wrap { position: relative; }
+.password-wrap input { padding-right: 76px !important; }
+.password-toggle { position: absolute; top: 50%; right: 12px; transform: translateY(-50%); border: 0; color: var(--green); background: transparent; font-size: 10px; cursor: pointer; }
+.forgot-link { align-self: flex-end; border: 0; padding: 4px 0; color: #aebdb4; background: transparent; font: inherit; font-size: 10px; cursor: pointer; }
+.forgot-link:hover { color: var(--green); }
+.auth-message { display: none; margin: 5px 0; padding: 11px 12px; border-radius: 5px; font-size: 11px; line-height: 1.6; }
+.auth-message.visible { display: block; }
+.auth-message.error { color: #ffb8b8; background: rgba(170,49,49,.13); border: 1px solid rgba(255,120,120,.2); }
+.auth-message.success { color: #9af0bf; background: rgba(55,150,95,.12); border: 1px solid rgba(98,227,167,.2); }
+.auth-submit { width: 100%; min-height: 49px; margin-top: 9px; cursor: pointer; font: inherit; }
+.auth-submit:disabled { opacity: .65; cursor: wait; }
+.auth-legal { margin: 23px 0 0; color: #718278; font-size: 9px; line-height: 1.7; text-align: center; }
+.auth-footer { margin: 25px 0 0; color: #627369; font-size: 8px; letter-spacing: 1.5px; text-align: center; }
+@media (max-width: 520px) { .auth-main { min-height: calc(100vh - 70px); padding: 34px 16px 24px; } .auth-card { padding: 27px 22px; } .auth-header { height: 70px; } .auth-header .nav-container { width: calc(100% - 32px); } .brand-name { font-size: 28px; } .brand-icon { width: 26px; } .brand-subtitle { font-size: 7px; } }
