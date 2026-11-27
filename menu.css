@@ -79,7 +79,22 @@
   --check-color: #1c6b47;
   --dot-color: #68d89b;
 }
+.navigation {
+  display: flex;
+  align-items: center;
 
+  gap: 34px;
+
+  color: #c2cec7;
+}
+
+.navigation a {
+  transition: color 0.2s;
+}
+
+.navigation a:hover {
+  color: var(--green);
+}
 * {
   margin: 0;
   padding: 0;
