@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Nexo | Automação & IA</title>
-
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -14,44 +12,35 @@
     <header class="header">
       <div class="nav-container">
         <!-- LOGO -->
-        <a class="brand" href="#inicio">
-          <svg class="brand-icon" viewBox="0 0 34 34">
+        <a class="brand" href="index.html">
+          <svg class="brand-icon" viewBox="0 0 34 34" aria-hidden="true">
             <rect x="3" y="3" width="11" height="11" rx="3" />
             <rect x="20" y="20" width="11" height="11" rx="3" />
             <path d="M14 9h5a3 3 0 0 1 3 3v8" />
             <rect x="3" y="20" width="11" height="11" rx="3" />
           </svg>
-
           <span class="brand-name">nexo.</span>
-
           <span class="brand-divider"></span>
-
-          <span class="brand-subtitle">
-            AUTOMAÇÃO<br />
-            & IA
-          </span>
+          <span class="brand-subtitle">AUTOMAÇÃO<br />&amp; IA</span>
         </a>
 
         <!-- BOTÃO MENU MOBILE -->
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
 
         <!-- MENU -->
-        <nav class="navigation" id="navigation">
+        <nav class="navigation" id="navigation" aria-label="Navegação principal">
           <a href="solucaos.html">Soluções</a>
-          <a href="#como-funciona">Como funciona</a>
+          <a href="index.html#como-funciona">Como funciona</a>
           <a href="planos.html">Planos</a>
         </nav>
 
         <!-- ACESSO E CONTATO -->
         <div class="header-actions">
           <a class="button button-outline header-login" href="login.html" id="authAction">Entrar</a>
-          <a class="button button-primary header-cta" href="#contato">
-            Vamos conversar
-            <span>↗</span>
+          <a class="button button-primary header-cta" href="index.html#contato">
+            Vamos conversar <span>↗</span>
           </a>
         </div>
       </div>
@@ -62,40 +51,19 @@
       <!-- SEÇÃO PRINCIPAL -->
       <section class="hero" id="inicio">
         <div class="hero-inner">
-          <!-- TEXTOS PRINCIPAIS -->
           <div class="hero-copy">
-            <p class="eyebrow">
-              <span class="status-dot"></span>
-              INTELIGÊNCIA QUE MOVE NEGÓCIOS
-            </p>
-
-            <h1>
-              Automação empresarial.<br />
-              <span>
-                Mais tempo para<br />
-                o que importa.
-              </span>
-            </h1>
-
+            <p class="eyebrow"><span class="status-dot"></span>INTELIGÊNCIA QUE MOVE NEGÓCIOS</p>
+            <h1>Automação empresarial.<br /><span>Mais tempo para<br />o que importa.</span></h1>
             <p class="hero-description">
               Conectamos processos, sistemas e inteligência artificial<br class="desktop-break" />
               para sua empresa trabalhar melhor. Sem complicar.
             </p>
 
-            <!-- BOTÕES -->
             <div class="hero-buttons">
-              <a class="button button-primary" href="#contato">
-                Encontre sua automação
-                <span>↗</span>
-              </a>
-
-              <a class="button button-outline" href="#como-funciona">
-                Explore as soluções
-                <span>→</span>
-              </a>
+              <a class="button button-primary" href="#contato">Encontre sua automação <span>↗</span></a>
+              <a class="button button-outline" href="solucaos.html">Explore as soluções <span>→</span></a>
             </div>
 
-            <!-- BENEFÍCIOS -->
             <div class="benefits">
               <span><b>✓</b> Soluções sob medida</span>
               <span><b>✓</b> Foco em resultado</span>
@@ -103,67 +71,47 @@
             </div>
           </div>
 
-          <!-- ÁREA VISUAL DECORATIVA -->
-          <div class="hero-visual">
-            <div class="orb orb-one"></div>
-            <div class="orb orb-two"></div>
-            <div class="connection connection-one"></div>
-            <div class="connection connection-two"></div>
-            <div class="connection connection-three"></div>
-            <div class="visual-caption">
-              SISTEMAS CONECTADOS <span>●</span> FLUXOS INTELIGENTES
-            </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="orb orb-one"></div><div class="orb orb-two"></div>
+            <div class="connection connection-one"></div><div class="connection connection-two"></div><div class="connection connection-three"></div>
+            <div class="visual-caption">SISTEMAS CONECTADOS <span>●</span> FLUXOS INTELIGENTES</div>
           </div>
 
-          <!-- RODAPÉ DA SEÇÃO PRINCIPAL -->
           <div class="hero-bottom" id="como-funciona">
-            <span> MENOS REPETIÇÃO. MAIS POSSIBILIDADES. </span>
+            <span>MENOS REPETIÇÃO. MAIS POSSIBILIDADES.</span>
             <a href="planos.html">Conheça nossos planos <span>↓</span></a>
           </div>
         </div>
       </section>
 
       <!-- FERRAMENTAS E INTEGRAÇÕES -->
-      <section class="integrations" id="planos">
+      <section class="integrations" id="planos-integracoes">
         <div class="integration-inner">
-          <div class="integration-intro">
-            <span>Suas ferramentas.</span>
-            <strong>Agora, conectadas.</strong>
-          </div>
+          <div class="integration-intro"><span>Suas ferramentas.</span><strong>Agora, conectadas.</strong></div>
           <div class="integration-logo n8n"><span class="mini-nodes">⌘</span> n8n</div>
           <div class="integration-logo make"><span class="make-mark">▰</span> make</div>
           <div class="integration-logo openai"><span class="spark">✧</span> OpenAI</div>
           <div class="integration-logo whatsapp"><span class="chat-icon">▱</span> WhatsApp</div>
-          <div class="integration-logo crm"><span class="network-icon">♧</span> CRM & ERP</div>
+          <div class="integration-logo crm"><span class="network-icon">♧</span> CRM &amp; ERP</div>
         </div>
       </section>
 
       <!-- CONTATO -->
       <section class="contact-section" id="contato">
         <div>
-          <p class="eyebrow">
-            <span class="status-dot"></span>
-            VAMOS CONSTRUIR ALGO MELHOR
-          </p>
+          <p class="eyebrow"><span class="status-dot"></span>VAMOS CONSTRUIR ALGO MELHOR</p>
           <h2>Seu próximo passo<br /><span>começa com uma conversa.</span></h2>
           <p>Conte para nós sobre sua empresa e descubra onde a automação pode ajudar.</p>
         </div>
-        <a class="button button-primary" href="mailto:ruanrodrigodeandrade21@gmail.com">
-          Vamos conversar <span>↗</span>
-        </a>
+        <a class="button button-primary" href="mailto:ruanrodrigodeandrade21@gmail.com">Vamos conversar <span>↗</span></a>
       </section>
     </main>
 
-    <!-- RODAPÉ -->
     <footer class="footer">
-      <span>nexo. <small>Automação & IA</small></span>
-      <span> Menos repetição. Mais possibilidades. </span>
+      <span>nexo. <small>Automação &amp; IA</small></span>
+      <span>Menos repetição. Mais possibilidades.</span>
     </footer>
 
-    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="supabase-config.js"></script>
-    <script src="auth.js"></script>
   </body>
 </html>
