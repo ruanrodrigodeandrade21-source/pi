@@ -1,105 +1,180 @@
-:root {
-  --bg-page: #f8f9f8;
-  --bg-card: #f8f9f8;
-  --bg-card-featured: #eaf1ed;
-  --border-card: #d5dad7;
-  --border-featured: #145338;
-  --divider-color: #dce1de;
-  
-  --text-primary: #111815;
-  --text-secondary: #5c6661;
-  --text-muted: #727c77;
-  --text-tag: #4e6358;
-  
-  --accent-green: #68d89b;
-  --accent-green-hover: #57c78a;
-  --check-color: #1c6b47;
-  --dot-color: #68d89b;
-}
+
+
 /* CABEÇALHO */
-.header {
-  height: 80px;
-
-  border-bottom: 1px solid var(--line);
-
-  background: rgba(7, 16, 13, 0.96);
-
-  position: relative;
-  z-index: 5;
+header {
+    width: 100%;
+    height: 75px;
+    background: #06120e;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
 }
 
-.nav-container {
-  width: min(1148px, calc(100% - 48px));
-  height: 100%;
-
-  margin: auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 30px;
+/* CONTAINER PRINCIPAL */
+.header-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 
 /* LOGO */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -1px;
 }
 
-.brand-icon {
-  width: 30px;
-  height: 30px;
-
-  fill: none;
-
-  stroke: var(--green);
-  stroke-width: 2.5;
-
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
-.brand-name {
-  font-size: 32px;
-  font-weight: 700;
-
-  letter-spacing: -1.6px;
+/* IDENTIFICAÇÃO DA MARCA */
+.logo-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.brand-divider {
-  height: 30px;
-  width: 1px;
-
-  background: var(--line);
-
-  margin: 0 2px 0 8px;
+.logo-description {
+    font-size: 8px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #ffffff;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    padding-left: 12px;
+    text-transform: uppercase;
 }
 
-.brand-subtitle {
-  font-size: 8px;
-  line-height: 1.5;
-
-  font-weight: 700;
+/* MENU DE NAVEGAÇÃO */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
 }
 
-/* MENU */
-.navigation {
-  display: flex;
-  align-items: center;
-
-  gap: 34px;
-
-  color: #c2cec7;
+.nav-menu a {
+    color: #d4d9d6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
-.navigation a {
-  transition: color 0.2s;
+.nav-menu a:hover {
+    color: #60e5b0;
 }
 
-.navigation a:hover {
-  color: var(--green);
+/* BOTÕES */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-login {
+    height: 45px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    border-color: #60e5b0;
+    color: #60e5b0;
+}
+
+.btn-contact {
+    height: 45px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #06120e;
+    background: #60dfaa;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    background: #43c992;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 75px;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        padding: 12px 0;
+    }
+
+    .header-actions {
+        gap: 6px;
+    }
+
+    .btn-login,
+    .btn-contact {
+        height: 38px;
+        padding: 0 12px;
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo-description {
+        display: none;
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
 }
 
 /* BOTÕES */
