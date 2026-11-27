@@ -1,118 +1,21 @@
-
-
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-    header {
-        height: auto;
-        min-height: 75px;
-    }
-
-    .header-container {
-        flex-wrap: wrap;
-        padding: 15px 20px;
-        gap: 15px;
-    }
-
-    .nav-menu {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-        padding: 12px 0;
-    }
-
-    .header-actions {
-        gap: 6px;
-    }
-
-    .btn-login,
-    .btn-contact {
-        height: 38px;
-        padding: 0 12px;
-        font-size: 11px;
-    }
-
-    .logo {
-        font-size: 23px;
-    }
+:root {
+  --bg-page: #f8f9f8;
+  --bg-card: #f8f9f8;
+  --bg-card-featured: #eaf1ed;
+  --border-card: #d5dad7;
+  --border-featured: #145338;
+  --divider-color: #dce1de;
+  
+  --text-primary: #111815;
+  --text-secondary: #5c6661;
+  --text-muted: #727c77;
+  --text-tag: #4e6358;
+  
+  --accent-green: #68d89b;
+  --accent-green-hover: #57c78a;
+  --check-color: #1c6b47;
+  --dot-color: #68d89b;
 }
-
-@media (max-width: 420px) {
-    .logo-description {
-        display: none;
-    }
-
-    .nav-menu {
-        gap: 15px;
-    }
-
-    .nav-menu a {
-        font-size: 12px;
-    }
-}
-
-/* BOTÕES */
-.button {
-  display: inline-flex;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 12px;
-
-  min-height: 45px;
-
-  padding: 0 19px;
-
-  border-radius: 4px;
-
-  font-size: 12px;
-  font-weight: 500;
-
-  transition:
-    transform 0.2s,
-    background 0.2s,
-    border-color 0.2s;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-}
-
-.button span {
-  font-size: 16px;
-  line-height: 1;
-}
-
-.button-primary {
-  background: var(--green);
-  color: #06110c;
-
-  border: 1px solid var(--green);
-}
-
-.button-primary:hover {
-  background: #82f0bc;
-}
-
-.button-outline {
-  border: 1px solid var(--line);
-  color: #f0f5f2;
-}
-
-.button-outline:hover {
-  border-color: var(--green);
-}
-
-.header-cta {
-  min-width: 150px;
-}
-
-/* BOTÃO DO MENU MOBILE */
-.menu-toggle {
-  display: none;
-}
-
 
 * {
   margin: 0;
