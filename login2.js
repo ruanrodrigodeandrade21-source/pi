@@ -77,7 +77,11 @@
         if (mode === "signup") {
           const { data, error } = await client.auth.signUp({
             email, password,
-            options: { data: { full_name: nameField.value.trim() } }
+            options: {
+              data: { full_name: nameField.value.trim() },
+              // Após confirmar o e-mail, retornar à página de login do próprio site.
+              emailRedirectTo: window.location.origin + "/login.html"
+            }
           });
           if (error) throw error;
           if (data.session) {
