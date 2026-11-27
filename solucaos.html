@@ -1,246 +1,182 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Soluções | Nexo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="solucoes.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <a class="brand" href="index.html">
+          <svg class="brand-icon" viewBox="0 0 34 34" aria-hidden="true">
+            <rect x="3" y="3" width="11" height="11" rx="3" />
+            <rect x="20" y="20" width="11" height="11" rx="3" />
+            <path d="M14 9h5a3 3 0 0 1 3 3v8" />
+            <rect x="3" y="20" width="11" height="11" rx="3" />
+          </svg>
+          <span class="brand-name">nexo.</span>
+          <span class="brand-divider"></span>
+          <span class="brand-subtitle">AUTOMAÇÃO<br />&amp; IA</span>
+        </a>
+
+        <nav class="navigation" id="navigation">
+          <a href="solucaos.html">Soluções</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#planos">Planos</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="button button-outline header-login" href="login.html">Entrar</a>
+          <a class="button button-primary header-cta" href="index.html#contato">Vamos conversar <span>↗</span></a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- SEÇÃO DE SOLUÇÕES -->
+      <section class="solutions-section py-5 py-lg-6" id="solucoes">
+        <div class="container solutions-container">
+          <p class="section-label d-flex align-items-center gap-2">
+            <span class="status-dot"></span>
+            SOLUÇÕES SOB MEDIDA
+          </p>
+
+          <h2 class="solutions-title display-5 fw-semibold mb-3">Menos tarefas. Mais possibilidades.</h2>
+
+          <p class="solutions-description fs-5 mb-5">
+            Automação não é uma receita pronta. É conectar o que sua empresa precisa,
+            com o que a tecnologia pode fazer bem.
+          </p>
+
+          <!-- CARDS DE SOLUÇÕES -->
+          <div class="row g-3 solutions-grid">
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="solution-card h-100">
+                <div class="card-top d-flex justify-content-between align-items-center"><div class="card-icon">▢</div><span class="card-category">RELACIONAMENTO</span></div>
+                <h3>Atendimento com IA</h3>
+                <p>Respostas ágeis, triagem inteligente e uma transição natural para sua equipe.</p>
+                <a href="index.html#contato">Conversar sobre esta solução <span>→</span></a>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="solution-card h-100">
+                <div class="card-top d-flex justify-content-between align-items-center"><div class="card-icon">▦</div><span class="card-category">OPERAÇÃO</span></div>
+                <h3>Agendamento inteligente</h3>
+                <p>Agende, confirme e reagende. Menos trabalho manual, mais organização.</p>
+                <a href="index.html#contato">Conversar sobre esta solução <span>→</span></a>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="solution-card h-100">
+                <div class="card-top d-flex justify-content-between align-items-center"><div class="card-icon">↗</div><span class="card-category">VENDAS</span></div>
+                <h3>Automação comercial</h3>
+                <p>Do primeiro contato ao follow-up: nenhuma oportunidade esquecida.</p>
+                <a href="index.html#contato">Conversar sobre esta solução <span>→</span></a>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="solution-card h-100">
+                <div class="card-top d-flex justify-content-between align-items-center"><div class="card-icon">♧</div><span class="card-category">INTEGRAÇÃO</span></div>
+                <h3>Integração de sistemas</h3>
+                <p>Seu CRM, ERP e ferramentas trabalhando juntos, sem copiar e colar.</p>
+                <a href="index.html#contato">Conversar sobre esta solução <span>→</span></a>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="solution-card h-100">
+                <div class="card-top d-flex justify-content-between align-items-center"><div class="card-icon">▤</div><span class="card-category">PRODUTIVIDADE</span></div>
+                <h3>Rotinas administrativas</h3>
+                <p>Documentos, planilhas e relatórios organizados em fluxos consistentes.</p>
+                <a href="index.html#contato">Conversar sobre esta solução <span>→</span></a>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="solution-card h-100">
+                <div class="card-top d-flex justify-content-between align-items-center"><div class="card-icon">✧</div><span class="card-category">INTELIGÊNCIA</span></div>
+                <h3>Agentes personalizados</h3>
+                <p>Assistentes desenhados para tarefas específicas, com limites e supervisão.</p>
+                <a href="index.html#contato">Conversar sobre esta solução <span>→</span></a>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="solution-card h-100">
+                <div class="card-top d-flex justify-content-between align-items-center"><div class="card-icon">↗</div><span class="card-category">FINANCEIRO</span></div>
+                <h3>Financeiro assistido</h3>
+                <p>Lembretes de cobrança, organização financeira e conferência com aprovação humana.</p>
+                <a href="index.html#contato">Conversar sobre esta solução <span>→</span></a>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="solution-card h-100">
+                <div class="card-top d-flex justify-content-between align-items-center"><div class="card-icon">▢</div><span class="card-category">CRESCIMENTO</span></div>
+                <h3>Marketing e pós-venda</h3>
+                <p>Jornadas de relacionamento, segmentação e mensagens com autorização.</p>
+                <a href="index.html#contato">Conversar sobre esta solução <span>→</span></a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO NA PRÁTICA -->
+      <section class="practice-section py-5 py-lg-6" id="como-funciona">
+        <div class="container practice-container">
+          <p class="section-label d-flex align-items-center gap-2"><span class="status-dot"></span>NA PRÁTICA</p>
+          <h2 class="practice-title display-5 fw-semibold">O processo muda.<br />O objetivo é simplificar.</h2>
+
+          <div class="practice-tabs nav nav-pills mt-4" role="tablist">
+            <button class="practice-tab nav-link active" type="button" data-tab="clinicas">Clínicas</button>
+            <button class="practice-tab nav-link" type="button" data-tab="imobiliarias">Imobiliárias</button>
+            <button class="practice-tab nav-link" type="button" data-tab="ecommerce">E-commerce</button>
+            <button class="practice-tab nav-link" type="button" data-tab="servicos">Serviços</button>
+          </div>
+
+          <div class="practice-content row g-4">
+            <div class="practice-left col-lg-5">
+              <h3 id="practiceHeading">Uma agenda mais organizada.</h3>
+              <p id="practiceProblem">Confirmações manuais e horários perdidos por faltas.</p>
+            </div>
+            <div class="practice-right col-lg-7">
+              <span class="practice-small-label">UM FLUXO POSSÍVEL</span>
+              <p class="practice-flow" id="practiceFlow">Agenda → confirmação → reagendamento → fila de espera</p>
+              <p class="practice-description" id="practiceDescription">Menos tarefas para a recepção e mais visibilidade dos horários. Sem diagnóstico ou orientação médica.</p>
+              <p class="practice-note" id="practiceNote">Exemplo ilustrativo. Escopo e resultados dependem do diagnóstico.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAMADA FINAL -->
+      <section class="final-cta py-5" id="planos">
+        <div class="container final-cta-container d-flex align-items-center justify-content-between gap-4">
+          <div class="final-cta-left">
+            <p class="final-cta-label">O PRÓXIMO PASSO</p>
+            <h2 class="display-5 fw-semibold">Seu negócio pode<br />operar de outro jeito.</h2>
+          </div>
+          <div class="final-cta-right">
+            <p>Vamos encontrar o processo certo para começar.</p>
+            <a href="index.html#contato" class="final-cta-button">Quero automatizar meu negócio <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-<!-- SEÇÃO DE SOLUÇÕES -->
-<section class="solutions-section" id="solucoes">
-  <div class="solutions-container">
-    <p class="section-label">
-      <span class="status-dot"></span>
-      SOLUÇÕES SOB MEDIDA
-    </p>
-
-    <h2 class="solutions-title">Menos tarefas. Mais possibilidades.</h2>
-
-    <p class="solutions-description">
-      Automação não é uma receita pronta. É conectar o que sua empresa precisa,
-      com o que a tecnologia pode fazer bem.
-    </p>
-
-    <!-- CARDS DE SOLUÇÕES -->
-    <div class="solutions-grid">
-      <!-- CARD 1 -->
-      <article class="solution-card">
-        <div class="card-top">
-          <div class="card-icon">▢</div>
-
-          <span class="card-category">RELACIONAMENTO</span>
-        </div>
-
-        <h3>Atendimento com IA</h3>
-
-        <p>
-          Respostas ágeis, triagem inteligente e uma transição natural para sua
-          equipe.
-        </p>
-
-        <a href="#contato"> Conversar sobre esta solução <span>→</span> </a>
-      </article>
-
-      <!-- CARD 2 -->
-      <article class="solution-card">
-        <div class="card-top">
-          <div class="card-icon">▦</div>
-
-          <span class="card-category">OPERAÇÃO</span>
-        </div>
-
-        <h3>Agendamento inteligente</h3>
-
-        <p>
-          Agende, confirme e reagende. Menos trabalho manual, mais organização.
-        </p>
-
-        <a href="#contato"> Conversar sobre esta solução <span>→</span> </a>
-      </article>
-
-      <!-- CARD 3 -->
-      <article class="solution-card">
-        <div class="card-top">
-          <div class="card-icon">↗</div>
-
-          <span class="card-category">VENDAS</span>
-        </div>
-
-        <h3>Automação comercial</h3>
-
-        <p>Do primeiro contato ao follow-up: nenhuma oportunidade esquecida.</p>
-
-        <a href="#contato"> Conversar sobre esta solução <span>→</span> </a>
-      </article>
-
-      <!-- CARD 4 -->
-      <article class="solution-card">
-        <div class="card-top">
-          <div class="card-icon">♧</div>
-
-          <span class="card-category">INTEGRAÇÃO</span>
-        </div>
-
-        <h3>Integração de sistemas</h3>
-
-        <p>
-          Seu CRM, ERP e ferramentas trabalhando juntos, sem copiar e colar.
-        </p>
-
-        <a href="#contato"> Conversar sobre esta solução <span>→</span> </a>
-      </article>
-
-      <!-- CARD 5 -->
-      <article class="solution-card">
-        <div class="card-top">
-          <div class="card-icon">▤</div>
-
-          <span class="card-category">PRODUTIVIDADE</span>
-        </div>
-
-        <h3>Rotinas administrativas</h3>
-
-        <p>
-          Documentos, planilhas e relatórios organizados em fluxos consistentes.
-        </p>
-
-        <a href="#contato"> Conversar sobre esta solução <span>→</span> </a>
-      </article>
-
-      <!-- CARD 6 -->
-      <article class="solution-card">
-        <div class="card-top">
-          <div class="card-icon">✧</div>
-
-          <span class="card-category">INTELIGÊNCIA</span>
-        </div>
-
-        <h3>Agentes personalizados</h3>
-
-        <p>
-          Assistentes desenhados para tarefas específicas, com limites e
-          supervisão.
-        </p>
-
-        <a href="#contato"> Conversar sobre esta solução <span>→</span> </a>
-      </article>
-
-      <!-- CARD 7 -->
-      <article class="solution-card">
-        <div class="card-top">
-          <div class="card-icon">↗</div>
-
-          <span class="card-category">FINANCEIRO</span>
-        </div>
-
-        <h3>Financeiro assistido</h3>
-
-        <p>
-          Lembretes de cobrança, organização financeira e conferência com
-          aprovação humana.
-        </p>
-
-        <a href="#contato"> Conversar sobre esta solução <span>→</span> </a>
-      </article>
-
-      <!-- CARD 8 -->
-      <article class="solution-card">
-        <div class="card-top">
-          <div class="card-icon">▢</div>
-
-          <span class="card-category">CRESCIMENTO</span>
-        </div>
-
-        <h3>Marketing e pós-venda</h3>
-
-        <p>
-          Jornadas de relacionamento, segmentação e mensagens com autorização.
-        </p>
-
-        <a href="#contato"> Conversar sobre esta solução <span>→</span> </a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- SEÇÃO NA PRÁTICA -->
-<section class="practice-section" id="como-funciona">
-  <div class="practice-container">
-    <p class="section-label">
-      <span class="status-dot"></span>
-      NA PRÁTICA
-    </p>
-
-    <h2 class="practice-title">
-      O processo muda.<br />
-      O objetivo é simplificar.
-    </h2>
-
-    <!-- ABAS -->
-    <div class="practice-tabs">
-      <button class="practice-tab active" data-tab="clinicas">Clínicas</button>
-
-      <button class="practice-tab" data-tab="imobiliarias">Imobiliárias</button>
-
-      <button class="practice-tab" data-tab="ecommerce">E-commerce</button>
-
-      <button class="practice-tab" data-tab="servicos">Serviços</button>
-    </div>
-
-    <!-- CONTEÚDO DAS ABAS -->
-    <div class="practice-content">
-      <div class="practice-left">
-        <h3 id="practiceHeading">Uma agenda mais organizada.</h3>
-
-        <p id="practiceProblem">
-          Confirmações manuais e horários perdidos por faltas.
-        </p>
-      </div>
-
-      <div class="practice-right">
-        <span class="practice-small-label"> UM FLUXO POSSÍVEL </span>
-
-        <p class="practice-flow" id="practiceFlow">
-          Agenda → confirmação → reagendamento → fila de espera
-        </p>
-
-        <p class="practice-description" id="practiceDescription">
-          Menos tarefas para a recepção e mais visibilidade dos horários. Sem
-          diagnóstico ou orientação médica.
-        </p>
-
-        <p class="practice-note" id="practiceNote">
-          Exemplo ilustrativo. Escopo e resultados dependem do diagnóstico.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CHAMADA FINAL -->
-<section class="final-cta" id="planos">
-  <div class="final-cta-container">
-    <div class="final-cta-left">
-      <p class="final-cta-label">O PRÓXIMO PASSO</p>
-
-      <h2>
-        Seu negócio pode<br />
-        operar de outro jeito.
-      </h2>
-    </div>
-
-    <div class="final-cta-right">
-      <p>Vamos encontrar o processo certo para começar.</p>
-
-      <a href="#contato" class="final-cta-button">
-        Quero automatizar meu negócio
-
-        <span>↗</span>
-      </a>
-    </div>
-  </div>
-</section>
