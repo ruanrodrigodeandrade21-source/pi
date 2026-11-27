@@ -777,3 +777,160 @@ h2 span {
   .header-cta { padding: 0 10px; font-size: 10px; }
   .menu-toggle { margin-left: 0; }
 }
+
+/* =========================================
+   ANIMAÇÕES DA FIGURA VISUAL (.hero-visual)
+   ========================================= */
+
+/* Flutuação sutil de todo o bloco visual */
+.hero-visual {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  width: 49%;
+  height: 440px;
+  overflow: hidden;
+  opacity: 0.85;
+  background: radial-gradient(ellipse at 50% 50%,
+      rgba(37, 90, 66, 0.18),
+      transparent 65%);
+  animation: heroFloat 8s ease-in-out infinite;
+}
+
+/* 1. Órbitas elípticas com rotação e brilho dinâmico */
+.orb-one {
+  animation:
+    orbitPulseOne 7s ease-in-out infinite alternate,
+    borderGlow 4s ease-in-out infinite alternate;
+}
+
+.orb-two {
+  animation:
+    orbitPulseTwo 9s ease-in-out infinite alternate,
+    borderGlow 4s ease-in-out infinite alternate 2s;
+}
+
+/* 2. Os três blocos/quadrados arredondados flutuando em tempos diferentes */
+.connection-one {
+  animation:
+    nodeFloatOne 5.5s ease-in-out infinite,
+    borderGlow 3.5s ease-in-out infinite alternate;
+}
+
+.connection-two {
+  animation:
+    nodeFloatTwo 6.5s ease-in-out infinite 1s,
+    borderGlow 3.5s ease-in-out infinite alternate 1.2s;
+}
+
+.connection-three {
+  animation:
+    nodeFloatThree 6s ease-in-out infinite 2s,
+    borderGlow 3.5s ease-in-out infinite alternate 2.4s;
+}
+
+/* 3. Ponto da legenda piscando suavemente */
+.visual-caption span {
+  display: inline-block;
+  color: var(--green);
+  text-shadow: 0 0 8px rgba(98, 227, 167, 0.7);
+  animation: statusPulse 2.2s ease-in-out infinite;
+}
+
+/* =========================================
+   KEYFRAMES (OS MOVIMENTOS)
+   ========================================= */
+
+@keyframes heroFloat {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes orbitPulseOne {
+  0% {
+    transform: rotate(-28deg) scale(0.98);
+  }
+
+  100% {
+    transform: rotate(-24deg) scale(1.03);
+  }
+}
+
+@keyframes orbitPulseTwo {
+  0% {
+    transform: rotate(38deg) scale(1.02);
+  }
+
+  100% {
+    transform: rotate(34deg) scale(0.97);
+  }
+}
+
+@keyframes nodeFloatOne {
+
+  0%,
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(48deg) translate(-4px, -6px);
+  }
+}
+
+@keyframes nodeFloatTwo {
+
+  0%,
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(42deg) translate(5px, -4px);
+  }
+}
+
+@keyframes nodeFloatThree {
+
+  0%,
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(47deg) translate(3px, 6px);
+  }
+}
+
+@keyframes borderGlow {
+  0% {
+    border-color: rgba(98, 227, 167, 0.35);
+    box-shadow: 0 0 0px rgba(98, 227, 167, 0);
+  }
+
+  100% {
+    border-color: rgba(108, 235, 176, 0.85);
+    box-shadow: 0 0 16px rgba(98, 227, 167, 0.18);
+  }
+}
+
+@keyframes statusPulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.35;
+    transform: scale(0.75);
+  }
+}
