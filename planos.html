@@ -10,54 +10,38 @@
   <link rel="stylesheet" href="planos.css">
 </head>
 <body>
-    <!-- CABEÇALHO -->
-    <header class="header">
-      <div class="nav-container">
-        <!-- LOGO -->
-        <a class="brand" href="#inicio">
-          <svg class="brand-icon" viewBox="0 0 34 34">
-            <rect x="3" y="3" width="11" height="11" rx="3" />
-            <rect x="20" y="20" width="11" height="11" rx="3" />
-            <path d="M14 9h5a3 3 0 0 1 3 3v8" />
-            <rect x="3" y="20" width="11" height="11" rx="3" />
-          </svg>
+    
+<header>
+    <div class="header-container">
 
-          <span class="brand-name">nexo.</span>
+        <div class="logo-info">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Logo">
+                nexo.
+            </a>
 
-          <span class="brand-divider"></span>
+            <span class="logo-description">
+                AUTOMAÇÃO<br>& IA
+            </span>
+        </div>
 
-          <span class="brand-subtitle">
-            AUTOMAÇÃO<br />
-            & IA
-          </span>
-        </a>
-
-        <!-- BOTÃO MENU MOBILE -->
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <!-- MENU -->
-        <nav class="navigation" id="navigation">
-          <a href="solucaos.html">Soluções</a>
-          <a href="#como-funciona">Como funciona</a>
-          <a href="planos.html">Planos</a>
+        <nav class="nav-menu">
+            <a href="#solucoes">Soluções</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#planos">Planos</a>
         </nav>
 
-        <!-- ACESSO E CONTATO -->
         <div class="header-actions">
-          <a class="button button-outline header-login" href="login.html" id="authAction">Entrar</a>
-          <a class="button button-primary header-cta" href="#contato">
-            Vamos conversar
-            <span>↗</span>
-          </a>
+            <a href="login.php" class="btn-login">Entrar</a>
+
+            <a href="#contato" class="btn-contact">
+                Vamos conversar ↗
+            </a>
         </div>
-      </div>
-    </header>
-  <section class="pricing-section">
-    <div class="container">
+
+    </div>
+</header>
+
       <!-- Cabeçalho -->
       <header class="pricing-header">
         <div class="eyebrow">
